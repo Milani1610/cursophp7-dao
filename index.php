@@ -2,7 +2,6 @@
 
 require_once("config.php");
 
-
 //Carrega um usuario
 //$root = new Usuario();
 //$root->loadByid(1);
@@ -27,9 +26,15 @@ require_once("config.php");
 //echo $aluno;
 
 //Update de um usuario
+//$usuario = new Usuario();
+//$usuario->loadByid(8);
+//$usuario->update("jose", "456123");
+//echo $usuario;
+
+//Deletando um usuario
 $usuario = new Usuario();
-$usuario->loadByid(8);
-$usuario->update("jose", "456123");
+$usuario->loadByid(7);
+$usuario->delete();
 echo $usuario;
 
 ?>
